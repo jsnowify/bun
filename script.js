@@ -8,7 +8,7 @@ const textLoad = () => {
     text.textContent = "Chichi";
   }, 4000);
   setTimeout(() => {
-    text.textContent = "Chian";
+    text.textContent = "<3";
   }, 8000);
 };
 textLoad();
@@ -30,8 +30,8 @@ function animateNoButton() {
   let left = 0;
   let top = 0;
 
-  const boundingBoxWidth = window.innerWidth * 0.4; // Adjust the width of the bounding box
-  const boundingBoxHeight = window.innerHeight * 0.4; // Adjust the height of the bounding box
+  const boundingBoxWidth = window.innerWidth * 0.4;
+  const boundingBoxHeight = window.innerHeight * 0.4;
 
   const maxX = window.innerWidth - boundingBoxWidth;
   const maxY = window.innerHeight - boundingBoxHeight;
@@ -42,9 +42,8 @@ function animateNoButton() {
 
     btnNo.style.left = `${left}px`;
     btnNo.style.top = `${top}px`;
-  }, 1000); // Adjust the interval duration (1 second in this example)
+  }, 1000);
 
-  // Stop moving after 3 seconds (adjust as needed)
   setTimeout(() => {
     clearInterval(intervalId);
     btnNo.classList.remove("moving");
